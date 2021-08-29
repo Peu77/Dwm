@@ -16,8 +16,9 @@ static const char *fonts[]     = {"Mononoki Nerd Font:size=13:antialias=true:aut
 						     	};
 static const char col_1[]  = "#282c34"; /* background color of bar */
 static const char col_2[]  = "#282c34"; /* border color unfocused windows */
-static const char col_3[]  = "#8AC9D6"; /* default: d7d7d7 */
+static const char col_3[]  = "#21F3CD"; /* default: 00FF44 text color in bar*/
 static const char col_4[]  = "#06E4BF"; /* border color focused windows and tags */
+static const char hover[]  = "#1A1C21";
 /* bar opacity 
  * 0xff is no transparency.
  * 0xee adds wee bit of transparency.
@@ -28,13 +29,13 @@ static const unsigned int baralpha    = 0xff;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]        = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_3, col_1, col_2 },
-	[SchemeSel]  = { col_3, col_2, col_4 },
+	[SchemeNorm] = { col_3, col_2, col_2 },
+	[SchemeSel]  = { col_3, hover, col_4 },
 };
 static const unsigned int alphas[][3] = {
 	/*               fg      bg        border     */
-	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
-	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
+	[SchemeNorm] = { OPAQUE, borderalpha, borderalpha },
+	[SchemeSel]  = { OPAQUE, borderalpha, borderalpha },
 };
 
 /* tagging */
