@@ -138,6 +138,7 @@ static Key keys[] = {
 	{ MODKEY|Mod1Mask,      -1,        XK_f,      spawn,          CMD("pcmanfm") },
 	{ MODKEY|Mod1Mask, 	-1, 	   XK_d,      spawn,	      CMD("discord") },
 	{ MODKEY|Mod1Mask,	-1,	   XK_i,      spawn,	      CMD("bash ~/idea/bin/idea.sh") },
+	{ MODKEY|Mod1Mask,	-1,	   XK_w,      spawn,	      CMD("bash ~/webstorm/bin/webstorm.sh") },
 
     /* Dmenu scripts launched with emacs-style keychords SUPER + p followed by "key" */
 	{ MODKEY,               XK_p,      XK_e,      spawn,          CMD("./dmscripts/dm-confedit") },
