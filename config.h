@@ -3,25 +3,26 @@ static const unsigned int snap     = 32;  /* snap pixel */
 static const unsigned int gappx    = 10;   /* pixel gap between clients */
 static const int showbar           = 1;   /* 0 means no bar */
 static const int topbar            = 1;   /* 0 means bottom bar */
-static const int horizpadbar       = 50;   /* horizontal padding for statusbar */
-static const int vertpadbar        = 15;   /* vertical padding for statusbar */
+static const int horizpadbar       = 25;   /* horizontal padding for statusbar */
+static const int vertpadbar        = 10;   /* vertical padding for statusbar */
 /* Mononoki Nerd Font must be installed from AUR nerd-fonts-complete.
  * Otherwise, your default font will be Hack which is found in the standard
  * Arch repos and is listed as a dependency for this build. JoyPixels is also
  * a hard dependency and makes colored fonts and emojis possible.
  */
 
-static const int vertpad            = gappx;       /* vertical padding of bar */
-static const int sidepad            = gappx;       /* horizontal padding of bar */
+static const int vertpad            = 0;       /* vertical padding of bar */
+static const int sidepad            = 0;       /* horizontal padding of bar */
 
-static const char *fonts[]     = {"Mononoki Nerd Font:size=13:antialias=true:autohint=true",
+static const char *fonts[]     = {"reqular.ttf Font:size=13:antialias=true:autohint=true",
+                                  "Mononoki Nerd Font:size=13:antialias=true:autohint=true",
                                   "Hack:size=8:antialias=true:autohint=true",
                                   "JoyPixels:size=10:antialias=true:autohint=true"
 						     	};
 static const char col_1[]  = "#282c34"; /* background color of bar */
 static const char col_2[]  = "#282c34"; /* border color unfocused windows */
-static const char col_3[]  = "#21F3CD"; /* default: 00FF44 text color in bar*/
-static const char col_4[]  = "#06E4BF"; /* border color focused windows and tags */
+static const char col_3[]  = "#86F6A7"; /* default:#21F3CD text color in bar*/
+static const char col_4[]  = "#86F6A7"; /* border color focused windows and tags old:#06E4BF*/
 static const char hover[]  = "#1A1C21";
 /* bar opacity 
  * 0xff is no transparency.
@@ -86,7 +87,7 @@ static const Layout layouts[] = {
 /* dmenu */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 /* If you are using the standard dmenu program, use the following. */
-static const char *dmenucmd[]    = { "dmenu_run", "-p", "Run: ", NULL };
+static const char *dmenucmd[]    = {"dmenu_run", "-c", "-bw", "2", "-l", "20", NULL};
 /* If you are using the dmenu-distrotube-git program, use the following for a cooler dmenu! */
 /* static const char *dmenucmd[]    = { "dmenu_run", "-g", "10", "-l", "48", "-p", "Run: ", NULL }; */
 
