@@ -753,15 +753,17 @@ drawbar(Monitor *m)
 	unsigned int i, occ = 0, urg = 0;
 	Client *c;
 
-      
-
+ 
 	/* draw status first so it can be overdrawn by tags later */
-	if (m == selmon || 1) { /* status is only drawn on selected monitor */
+	/* status is only drawn on selected monitor */
+
+	if (m == selmon || 1) { 
 		drw_setscheme(drw, scheme[SchemeNorm]);
 		sw = TEXTW(stext) - lrpad + 2;
 		drw_text(drw, m->ww - sw - 2 * sp, 0, sw, bh, 0, stext, 0);
 
 	}
+
 
 	for (c = m->clients; c; c = c->next) {
 		occ |= c->tags;
@@ -795,6 +797,7 @@ drawbar(Monitor *m)
 		}
 	}
 	drw_map(drw, m->barwin, 0, 0, m->ww, bh);
+	
 }
 
 void
