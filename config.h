@@ -22,8 +22,8 @@ static const char *fonts[]     = {"FuraCode Nerd Font:size=12:antialias:true:aut
 static const char col_1[]  = "#282c34"; /* background color of bar */
 static const char col_2[]  = "#282c34"; /* border color unfocused windows */
 static const char col_3[]  = "#21F3CD"; /* default:#21F3CD text color in bar*/
-static const char col_4[]  = "#52a8ff"; /* border color focused windows and tags old:#06E4BF*/
-static const char hover[]  = "#52a8ff";
+static const char col_4[]  = "#db6e8f"; /* border color focused windows and tags old:#06E4BF*/
+static const char hover[]  = "#db6e8f";
 /* bar opacity 
  * 0xff is no transparency.
  * 0xee adds wee bit of transparency.
