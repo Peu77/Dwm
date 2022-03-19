@@ -14,7 +14,7 @@ static const int vertpadbar        = 10;   /* vertical padding for statusbar */
 static const int vertpad            = 0;       /* vertical padding of bar */
 static const int sidepad            = 0;       /* horizontal padding of bar */
 
-static const char *fonts[]     = {"Source Code Pro Font:size=10:antialias=true:autohint=true",
+static const char *fonts[]     = {"FuraCode Nerd Font:size=12:antialias:true:autohint=true:style=Bold",
                                   "Mononoki Nerd Font:size=13:antialias=true:autohint=true",
                                   "Hack:size=8:antialias=true:autohint=true",
                                   "JoyPixels:size=10:antialias=true:autohint=true"
@@ -87,7 +87,7 @@ static const Layout layouts[] = {
 /* dmenu */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 /* If you are using the standard dmenu program, use the following. */
-static const char *dmenucmd[]    = {"dmenu_run", "-c", "-bw", "2", "-l", "20", NULL};
+static const char *dmenucmd[]    = {"rofi", "-show", "window", NULL};
 /* If you are using the dmenu-distrotube-git program, use the following for a cooler dmenu! */
 /* static const char *dmenucmd[]    = { "dmenu_run", "-g", "10", "-l", "48", "-p", "Run: ", NULL }; */
 
@@ -139,7 +139,7 @@ static Key keys[] = {
     /* Keybindings for programs using the format SUPER + ALT + "key" */
 	{ MODKEY|Mod1Mask,      -1,        XK_b,      spawn,          CMD("brave") },
 	{ MODKEY|Mod1Mask,      -1,        XK_m,      spawn,          CMD("mousepad") },
-	{ MODKEY|Mod1Mask,      -1,        XK_f,      spawn,          CMD("pcmanfm") },
+	{ MODKEY|Mod1Mask,      -1,        XK_f,      spawn,          CMD("thunar") },
 	{ MODKEY|Mod1Mask, 	-1, 	   XK_d,      spawn,	      CMD("discord --disable-gpu") },
 	{ MODKEY|Mod1Mask,	-1,	   XK_i,      spawn,	      CMD("bash ~/idea/bin/idea.sh") },
 	{ MODKEY|Mod1Mask,	-1,	   XK_w,      spawn,	      CMD("bash ~/webstorm/bin/webstorm.sh") },

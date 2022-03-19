@@ -11,8 +11,8 @@ static const unsigned int snap     = 32;  /* snap pixel */
 static const unsigned int gappx    = 6;   /* pixel gap between clients */
 static const int showbar           = 1;   /* 0 means no bar */
 static const int topbar            = 1;   /* 0 means bottom bar */
-static const int horizpadbar       = 6;   /* horizontal padding for statusbar */
-static const int vertpadbar        = 7;   /* vertical padding for statusbar */
+static const int horizpadbar       = 0;   /* horizontal padding for statusbar */
+static const int vertpadbar        = 0;   /* vertical padding for statusbar */
 /* Mononoki Nerd Font must be installed from AUR nerd-fonts-complete.
  * Otherwise, your default font will be Hack which is found in the standard
  * Arch repos and is listed as a dependency for this build. JoyPixels is also
