@@ -374,8 +374,8 @@ static int screen;
 static int sw, sh;           /* X display screen geometry width, height */
 static int bh, blw = 0;      /* bar geometry */
 static int lrpad = 0;            /* sum of left and right padding for text */
-static int vp = 10;
-static int sp = 10;
+static int vp = 0;
+static int sp = 0;
 
 static int (*xerrorxlib)(Display *, XErrorEvent *);
 
