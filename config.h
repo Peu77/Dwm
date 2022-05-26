@@ -139,7 +139,7 @@ static Key keys[] = {
     /* Keybindings for programs using the format SUPER + ALT + "key" */
 	{ MODKEY|Mod1Mask,      -1,        XK_b,      spawn,          CMD("brave") },
 	{ MODKEY|Mod1Mask,      -1,        XK_m,      spawn,          CMD("mousepad") },
-	{ MODKEY|Mod1Mask,      -1,        XK_f,      spawn,          CMD("thunar") },
+	{ MODKEY|Mod1Mask,      -1,        XK_f,      spawn,          CMD("nautilus") },
 	{ MODKEY|Mod1Mask, 	-1, 	   XK_d,      spawn,	      CMD("discord --disable-gpu") },
 	{ MODKEY|Mod1Mask,	-1,	   XK_i,      spawn,	      CMD("bash ~/idea/bin/idea.sh") },
 	{ MODKEY|Mod1Mask,	-1,	   XK_w,      spawn,	      CMD("bash ~/webstorm/bin/webstorm.sh") },
