@@ -693,7 +693,7 @@ configure(Client *c) {
     ce.border_width = c->bw;
     ce.above = None;
     ce.override_redirect = False;
-    XSendEvent(dpy, c->win, False, StructureNotifyMask, (XEvent *) &ce);
+    XSendEvent(dpy, c->win, False, StructureNotifyMask, (XEvent * ) & ce);
 }
 
 void
@@ -883,7 +883,7 @@ drawbar(Monitor *m) {
         drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], urg & 1 << i);
 
         //draw rect if min 1 application is there
-        if (occ & 1 << i){
+        if (occ & 1 << i) {
             drw_rect(drw, x, bh - 3, w, 3,
                      1, //m == selmon && selmon->sel && selmon->sel->tags & 1 << i
                      urg & 1 << i);
@@ -2255,7 +2255,8 @@ void
 updatestatus(void) {
     Monitor *m;
     if (!gettextprop(root, XA_WM_NAME, stext, sizeof(stext)))
-        strcpy(stext, "dwm-"VERSION);
+        strcpy(stext, "dwm-"
+    VERSION);
     for (m = mons; m; m = m->next)
         drawbar(m);
 }
@@ -2421,7 +2422,8 @@ zoom(const Arg *arg) {
 int
 main(int argc, char *argv[]) {
     if (argc == 2 && !strcmp("-v", argv[1]))
-        die("dwm-"VERSION);
+        die("dwm-"
+    VERSION);
     else if (argc != 1)
         die("usage: dwm [-v]");
     if (!setlocale(LC_CTYPE, "") || !XSupportsLocale())
