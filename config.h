@@ -53,8 +53,11 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "brave-browser",  NULL,       NULL,      	 2,       0,           -1 },
+	{ "jetbrains-webstorm",  NULL,       NULL,       	 2,       0,           0 },
+	{ "discord",  NULL,       NULL,      	 4,       0,           1 },
+	{ "Minecraft* 1.19",  NULL,       NULL,      	 4,       0,          0 },
+
 };
 
 /* layout(s) */
@@ -144,6 +147,7 @@ static Key keys[] = {
 	{ MODKEY|Mod1Mask,	-1,	   XK_i,      spawn,	      CMD("bash ~/idea/bin/idea.sh") },
 	{ MODKEY|Mod1Mask,	-1,	   XK_w,      spawn,	      CMD("bash ~/webstorm/bin/webstorm.sh") },
 	{ MODKEY|Mod1Mask,	-1,	   XK_s,      spawn,	      CMD("flameshot gui") },
+
 
 
 
