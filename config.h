@@ -1,4 +1,4 @@
-static const unsigned int borderpx = 2;   /* border pixel of windows */
+static const unsigned int borderpx = 3;   /* border pixel of windows */
 static const unsigned int snap     = 0;  /* snap pixel */
 static const unsigned int gappx    = 4;   /* pixel gap between clients */
 static const int showbar           = 1;   /* 0 means no bar */
@@ -22,7 +22,7 @@ static const char *fonts[]     = {"FuraCode Nerd Font:size=12:antialias:true:aut
 static const char col_1[]  = "#282c34"; /* background color of bar */
 static const char col_2[]  = "#282c34"; /* border color unfocused windows */
 static const char col_3[]  = "#21F3CD"; /* default:#21F3CD text color in bar*/
-static const char col_4[]  = "#db6e8f"; /* border color focused windows and tags old:#06E4BF*/
+static const char col_4[]  = "#ffffff"; /* border color focused windows and tags old:#06E4BF*/
 static const char hover[]  = "#db6e8f";
 /* bar opacity 
  * 0xff is no transparency.
@@ -147,6 +147,7 @@ static Key keys[] = {
 	{ MODKEY|Mod1Mask,	-1,	   XK_i,      spawn,	      CMD("bash ~/idea/bin/idea.sh") },
 	{ MODKEY|Mod1Mask,	-1,	   XK_w,      spawn,	      CMD("bash ~/webstorm/bin/webstorm.sh") },
 	{ MODKEY|Mod1Mask,	-1,	   XK_s,      spawn,	      CMD("flameshot gui") },
+	{Mod1Mask,	-1,	   XK_Tab,      spawn,	      CMD("rofi -show window") },
 
 
 
